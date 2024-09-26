@@ -10,12 +10,12 @@
 8. About: Prints the content of this file to the screen
 9. Exit: Exit the program
 
-##Files
+## Files
 
 Main.py -> This is the main file that connects all the other modules and is used to run the project
 requirements.txt -> It contains the required packages for this project to work that can be installed via the command pip3 install -r requirements.txt
 
-##Folders
+## Folders
 
 /Railway-Management/Assets : Contains the data that is to be inserted in the MySQL tables in csv format
 
