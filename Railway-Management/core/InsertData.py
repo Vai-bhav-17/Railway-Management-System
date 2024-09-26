@@ -1,7 +1,5 @@
 # This Module has the Functions to Insert the Data in the MySQL Tables
 
-# Importing Required Modules
-
 import csv
 import mysql.connector as con
 
@@ -22,8 +20,6 @@ def InsertDataTrain():
 
     cur = mn.cursor()
 
-    # Iterating through all the values and insert's them in the table
-    # Replace the path below with the absolute path of the file on your computer
     try:
         with open(r"C:\Users\Vaibhav N\Desktop\Railway-Management\Assets\Train_details.csv") as csv_data:
             csv_reader = csv.reader(csv_data, delimiter=",")
@@ -33,6 +29,6 @@ def InsertDataTrain():
     except FileNotFoundError:
         print("Please check whether the file is in the Assets Folder or not and try changing the Location in InsertData.py")
     finally:
-        mn.commit()  # Important: Committing the Changes
+        mn.commit()  
         cur.close()
         mn.close()
